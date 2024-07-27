@@ -223,100 +223,103 @@
   <content class="container">
 
     
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2024 SN</pre>
-      </div>
-    
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2023 SN</pre>
-      </div>
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2023 SC</pre>
-      </div>
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2022 SN</pre>
-      </div>
-    
+<div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2024 SN</pre>
+  </div>
 
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2022 SC</pre>
-      </div>
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2021 SN</pre>
-      </div>
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2023 SN</pre>
+  </div>
 
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2021 SC</pre>
-      </div>
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2023 SC</pre>
+  </div>
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2020 SN</pre>
-      </div>
-    </content>
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2022 SN</pre>
+  </div>
+
+
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2022 SC</pre>
+  </div>
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2021 SN</pre>
+  </div>
+
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2021 SC</pre>
+  </div>
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2020 SN</pre>
+  </div>
+</content>
 
 <div class="div1">
-    <p>
-      les anciens baccaulerats</p>
+<p>
+  les anciens baccaulerats</p>
+</div>
+<content class="container">
+
+
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2024 SN</pre>
   </div>
-  <content class="container">
-
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2024 SN</pre>
-      </div>
-    
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2023 SN</pre>
-      </div>
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2023 SC</pre>
-      </div>
-    
-
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2022 SN</pre>
-      </div>
-    
 
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2022 SC</pre>
-      </div>
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
-        <pre>BAC SN 2021 SN</pre>
-      </div>
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2023 SN</pre>
+  </div>
 
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2023 SC</pre>
+  </div>
+
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2022 SN</pre>
+  </div>
+
+
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2022 SC</pre>
+  </div>
+
+  <div class="trigger-div"><img src="show.png" alt="show.png">
+    <pre>BAC SN 2021 SN</pre>
+  </div>
+
+
+      <div class="trigger-div"><img src="show.png" alt="show.png">
         <pre>BAC SN 2021 SC</pre>
       </div>
 
-      <div class="trigger-div" onclick="openPDF()"><img src="show.png" alt="show.png">
+      <div class="trigger-div"><img src="show.png" alt="show.png">
         <pre>BAC SN 2020 SN</pre>
       </div>
     </content>
 
     <div class="container" id="pdfContainer"></div>
     <script>
-      function openPDF() {
-        window.open('bac.pdf', '_blank');
-      }
+      // function openPDF() {
+      //   window.open('bac.pdf', '_blank');
+      // }
+  const pdfs = document.querySelectorAll('.trigger-div');
+  pdfs.forEach(pdf => pdf.addEventListener('click', () => {
+    window.open('bac.pdf', '_blank')
+  })
     </script>
 </body>
 
